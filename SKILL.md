@@ -9,11 +9,11 @@ A doc has no compiler, so each audit derives the artifacts a check can contradic
 
 Checks split by executor. Mechanical, against the doc and the tree at HEAD: S3, M1, X1, X2's existence half, O1's order half. A judge agent decides the rest — A0, J0, S1, S2, S4, O1's decide half, O2, X2's behavior half — and its context is part of each check: J0 is derived from the system and the A0 sentence with the doc withheld, because a reader given only the doc certifies the doc's omissions; every other judge row then reads the doc against those declarations and the system, carrying nothing of the writing session, because a judge given the writer's vantage inherits it. The judge reports findings, not citations.
 
-Sentence-level style is delegated to obra's `writing-clearly-and-concisely`; these rows judge what a sentence is for, not how it reads.
+Sentence-level style is `references/style.md` — Williams distilled to checks (W1–W8), run after S1 hires the sentence; the rows here judge what a sentence is for, not how it reads.
 
 ## Rework
 
-Asked to write, rewrite or distill, the unit of work is the rework, not the patch: derive what the doc is for before reading how the incumbent wrote it. In order: read the system's surfaces; derive A0 and J0; state the point — the one claim the reader must retain. Where the system supports several irreconcilable points — different docs, not different phrasings — the owner chooses, and that is the only question asked. Then write fresh: the incumbent is evidence for facts and nothing else — its structure, order and register carry no authority, and a sentence is never spared for wearing the house voice, because the register asserts nothing (calibration, S1). Order comes from the funnel (O1); the sentence is delegated as above.
+Asked to write, rewrite or distill, the unit of work is the rework, not the patch: derive what the doc is for before reading how the incumbent wrote it. In order: read the system's surfaces; derive A0 and J0; state the point — the one claim the reader must retain. Where the system supports several irreconcilable points — different docs, not different phrasings — the owner chooses, and that is the only question asked. Then write fresh: the incumbent is evidence for facts and nothing else — its structure, order and register carry no authority, and a sentence is never spared for wearing the house voice, because the register asserts nothing (calibration, S1). Order comes from the funnel (O1); the sentence is written under `references/style.md`.
 
 ## Audit
 
