@@ -100,6 +100,7 @@ Fail the doc on:
 - **L4** a dead link
 - **L5** a fact restating a default its source owns
 - **L6** a statement whose subject is a former version of the system
+- **L7** a newline inside a paragraph or list item — the writer wrapping what the renderer wraps; prose is one line per paragraph, at any length
 
 ## When a verdict is unclear
 
@@ -111,4 +112,4 @@ Reach for: Diátaxis genre separation · every page is page one · curse of know
 
 Live by: the reader arrives mid-task · a fact you cannot find in time is a fact you do not have · a doc-only reading certifies its own omissions · a reader who correctly leaves is a success · boring reference is healthy reference · tests are written for maintainers, not readers · pruning without jobs optimizes words · the writer's context is not the reader's fact · unverified is not passed · the incumbent is evidence, not a template · the register asserts nothing
 
-Refuse — NEVER, not even once, not even "temporarily": marketing register ("blazingly", "simply", "just") · anticipatory self-defense · manufactured contrast · restating a source-owned default · fixture names in user docs · closure claims over open sets · narrating the session or the history · "please note" and throat-clearing · expected behavior stated as a feature · examples never executed · a word budget as the pruning criterion · a preservation checklist as a hire · audience or job metadata written into the doc · the incumbent's structure as a template · a sentence spared for its register
+Refuse — NEVER, not even once, not even "temporarily": marketing register ("blazingly", "simply", "just") · anticipatory self-defense · manufactured contrast · restating a source-owned default · fixture names in user docs · closure claims over open sets · narrating the session or the history · "please note" and throat-clearing · expected behavior stated as a feature · examples never executed · a word budget as the pruning criterion · a preservation checklist as a hire · audience or job metadata written into the doc · the incumbent's structure as a template · a sentence spared for its register · a newline inside a paragraph — hard wrap imitating the renderer
