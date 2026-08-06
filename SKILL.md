@@ -17,7 +17,7 @@ Asked to write, rewrite or distill, take the rework, not the patch, as the unit 
 
 ## Audit
 
-`--audit: complete | deep | light | none` scopes verification of the doc's claims against the system; deriving A0, J0 and the point reads the system's surfaces at every level. The default is `deep`. The report names the level that ran, and a check the level excludes is unverified, not passed — at every level.
+`--audit: complete | deep | light | none` scopes verification of the doc's claims against the system; deriving A0, J0 and the point reads the system's surfaces at every level. The default is `light`. The report names the level that ran, and a check the level excludes is unverified, not passed — at every level.
 
 - `complete` — every check as written: X1 executes and fetches, S2's first-correct-result runs on a clean machine, M1 and X2 hunt every artifact at HEAD.
 - `deep` — the tree is read, nothing executed: S3's source search, M1's artifact naming, X2 entire with behavior decided by reading; X1 and the clean-machine run are unverified.
