@@ -1,21 +1,34 @@
 ---
 name: writing-checkable-docs
-description: Use when writing, rewriting or reviewing a README, spec, runbook, CONTRIBUTING, or any standing doc; when asked to "distill this doc", "update the README", "document this", "is this doc good"; when a doc has bloated, gone stale, drifted from the code, or restates what code states; and at end of session when docs are updated to record what changed — before writing the update, not after.
+description: Use when writing, rewriting or reviewing a README, spec, runbook, CONTRIBUTING, or any standing doc; when asked to "rework this doc", "distill this doc", "update the README", "document this", "is this doc good"; when a doc has bloated, gone stale, drifted from the code, or restates what code states; and at end of session when docs are updated to record what changed — before writing the update, not after.
 ---
 
 # Doc Contracts
 
-A doc has no compiler, so the skill declares the artifacts a check can contradict: an audience sentence (A0) and a job list (J0). A missing declaration is one repository-level finding, reported once after the doc's findings and not among them — never restated per sentence. The mechanical rows run without it; each judge row without its upstream declaration returns unverified, not passed.
+A doc has no compiler, so each audit derives the artifacts a check can contradict: an audience sentence (A0) and a job list (J0). Both live in the audit report and nowhere else — a doc never carries its own audience or job metadata, and a rewrite that writes them into the doc has added sentences no job hires; they enter a doc only where the owner explicitly asked. The mechanical rows run without them; each judge row without its upstream artifact returns unverified, not passed.
 
 Checks split by executor. Mechanical, against the doc and the tree at HEAD: S3, M1, X1, X2's existence half, O1's order half. A judge agent decides the rest — A0, J0, S1, S2, S4, O1's decide half, O2, X2's behavior half — and its context is part of each check: J0 is derived from the system and the A0 sentence with the doc withheld, because a reader given only the doc certifies the doc's omissions; every other judge row then reads the doc against those declarations and the system, carrying nothing of the writing session, because a judge given the writer's vantage inherits it. The judge reports findings, not citations.
 
 Sentence-level style is delegated to obra's `writing-clearly-and-concisely`; these rows judge what a sentence is for, not how it reads.
 
+## Rework
+
+Asked to write, rewrite or distill, the unit of work is the rework, not the patch: derive what the doc is for before reading how the incumbent wrote it. In order: read the system's surfaces; derive A0 and J0; state the point — the one claim the reader must retain. Where the system supports several irreconcilable points — different docs, not different phrasings — the owner chooses, and that is the only question asked. Then write fresh: the incumbent is evidence for facts and nothing else — its structure, order and register carry no authority, and a sentence is never spared for wearing the house voice, because the register asserts nothing (calibration, S1). Order comes from the funnel (O1); the sentence is delegated as above.
+
+## Audit
+
+`--audit: complete | deep | light | none` scopes verification of the doc's claims against the system; deriving A0, J0 and the point reads the system's surfaces at every level. The default is `deep`. The report names the level that ran, and a check the level excludes is unverified, not passed — at every level.
+
+- `complete` — every check as written: X1 executes and fetches, S2's first-correct-result runs on a clean machine, M1 and X2 hunt every artifact at HEAD.
+- `deep` — the tree is read, nothing executed: S3's source search, M1's artifact naming, X2 entire with behavior decided by reading; X1 and the clean-machine run are unverified.
+- `light` — scans only: X2's existence half, L4's links, the doc-side L rows; behavior and artifacts unverified.
+- `none` — no verification: every fact is carried from the incumbent and the report says so.
+
 ### A0 · Declaration
 
 **Contract.** One doc, one audience, declared as situation plus knowledge floor — a moment, not a demographic (Pinker, curse of knowledge).
 
-**Check.** A declared sentence — "a reader who ⟨situation⟩, who already knows ⟨floor⟩" — is checked against the doc's content and the system; with none declared, the judge infers one from both, and its inferability is the check. Unwritable is an observation, not taste: two situations demanding different first screens, or no floor one reader holds, is two docs welded — split before judging any sentence, because every judge row decides against exactly one audience. With no sentence writable, every judge row below is unverified, not passed — the repository-level finding, once; the mechanical rows run regardless.
+**Check.** A sentence the owner supplies — "a reader who ⟨situation⟩, who already knows ⟨floor⟩" — is checked against the doc's content and the system; with none supplied, the judge infers one from both, and its inferability is the check. Unwritable is an observation, not taste: two situations demanding different first screens, or no floor one reader holds, is two docs welded — split before judging any sentence, because every judge row decides against exactly one audience. With no sentence writable, every judge row below is unverified, not passed — the repository-level finding, once; the mechanical rows run regardless.
 
 ### J0 · Interface
 
@@ -94,8 +107,8 @@ Fail the doc on:
 
 ## Keywords
 
-Reach for: Diátaxis genre separation · every page is page one · curse of knowledge · jobs-to-be-done — the reader hires the doc · task orientation · knowledge floor · funnel of correct decisions · disqualifier up front · first correct result · handoff at the class seam · one home for a fact · point, don't restate · modality matches artifact · findability over order below the fold · fixture-deletion test · judge without the doc
+Reach for: Diátaxis genre separation · every page is page one · curse of knowledge · jobs-to-be-done — the reader hires the doc · task orientation · knowledge floor · funnel of correct decisions · disqualifier up front · first correct result · handoff at the class seam · one home for a fact · point, don't restate · modality matches artifact · findability over order below the fold · fixture-deletion test · judge without the doc · derive the point, then write fresh · audit scoped by level
 
-Live by: the reader arrives mid-task · a fact you cannot find in time is a fact you do not have · a doc-only reading certifies its own omissions · a reader who correctly leaves is a success · boring reference is healthy reference · tests are written for maintainers, not readers · pruning without jobs optimizes words · the writer's context is not the reader's fact · unverified is not passed
+Live by: the reader arrives mid-task · a fact you cannot find in time is a fact you do not have · a doc-only reading certifies its own omissions · a reader who correctly leaves is a success · boring reference is healthy reference · tests are written for maintainers, not readers · pruning without jobs optimizes words · the writer's context is not the reader's fact · unverified is not passed · the incumbent is evidence, not a template · the register asserts nothing
 
-Refuse — NEVER, not even once, not even "temporarily": marketing register ("blazingly", "simply", "just") · anticipatory self-defense · manufactured contrast · restating a source-owned default · fixture names in user docs · closure claims over open sets · narrating the session or the history · "please note" and throat-clearing · expected behavior stated as a feature · examples never executed · a word budget as the pruning criterion · a preservation checklist as a hire
+Refuse — NEVER, not even once, not even "temporarily": marketing register ("blazingly", "simply", "just") · anticipatory self-defense · manufactured contrast · restating a source-owned default · fixture names in user docs · closure claims over open sets · narrating the session or the history · "please note" and throat-clearing · expected behavior stated as a feature · examples never executed · a word budget as the pruning criterion · a preservation checklist as a hire · audience or job metadata written into the doc · the incumbent's structure as a template · a sentence spared for its register

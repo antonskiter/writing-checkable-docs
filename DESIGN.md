@@ -86,6 +86,24 @@ Checks split by executor:
   preservation without S1.
 - **Modality inventions:** an expansion pass upgraded measured facts to
   required ones — four falsehoods from register alone. Hence M1.
+- **Register camouflage (2026-08-06):** three rewrite loops spared four
+  vacuous sentences because they wore the doc's own apodictic voice — the
+  judge matched register, not hire. Hence the S1 register clause and the
+  rework rule: the incumbent's style carries no authority.
+
+## Decisions (2026-08-06)
+
+- **A0/J0 never enter the doc.** A loop wrote them into a README as an HTML
+  comment; the declaration is audit apparatus, and in the doc it is sentences
+  no job hires. It lives in the audit report; in a doc only where the owner
+  explicitly asked.
+- **Rework over patch.** Derive the point from the system before reading how
+  the incumbent wrote it; the incumbent is evidence for facts only. The owner
+  is asked one question, only when several irreconcilable points arise.
+- **`--audit: complete | deep | light | none`, default `deep`.** Scopes claim
+  verification; full execution (X1, clean-machine S2) is `complete` only —
+  full execution cost ~10 min per agent on a one-page README, too rigorous as
+  the unconditional default.
 
 ## Prior art (what to compose, not rebuild)
 

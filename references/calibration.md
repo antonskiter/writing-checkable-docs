@@ -1,14 +1,15 @@
-# Where the rows must stay silent
+# Where the rows are mis-drawn
 
-Each entry is a shape a row is drawn to and must not fire on, with the clause
-that spares it. Every one was reached by grading three rewrites of one document
-— the kanon README: a 682-word original, a 187-word cut, a 1845-word expansion.
-Consult the row you doubt; the rest of the file is not needed.
+Each entry is a shape a row is mis-drawn to — firing where it must stay
+silent, or sparing what it must fire on — with the clause that decides it.
+Every one was a graded failure over one document, the kanon README, before it
+was a clause. Consult the row you doubt; the rest of the file is not needed.
 
 ## Contents
 
 - [S1 — a sentence judged by its cost in words](#s1-budget)
 - [S1 — a fact harvested from tests or source](#s1-provenance)
+- [S1 — a vacuous sentence in the house register](#s1-register)
 - [M1 — a true fact under a stronger register](#m1)
 
 ## S1 — a sentence judged by its cost in words {#s1-budget}
@@ -33,6 +34,19 @@ would survive deletion of the test suite — tests are the richest legible
 statement of behavior, and mining them is not the defect. **Silent on origin,
 firing on unhired** — the fixture-deletion test decides, not where the writer
 found the fact.
+
+## S1 — a vacuous sentence in the house register {#s1-register}
+
+Three rewrite loops spared four sentences because each wore the doc's own
+apodictic voice — a tautology ("either an install target or is not installed
+at all"), a self-evident inverse ("removal is deleting what it copied"), a
+source header restated with a closure claim ("copies the two trees, and does
+nothing else"). The row is drawn to sparing rule-shaped confidence: the
+skill's own exemplars sound like it, and a judge matches the voice instead of
+running the check. The clause: the register asserts nothing — S1 decides by
+hired-by alone, and a sentence restating a source header, inverting a stated
+fact, or exhausting cases ("either X or not X") fires however sure it sounds.
+**Silent on voice, firing on unhired.**
 
 ## M1 — a true fact under a stronger register {#m1}
 
