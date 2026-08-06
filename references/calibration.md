@@ -1,6 +1,6 @@
 # Where the rows are mis-drawn
 
-Each entry is a shape a row is mis-drawn to — firing where it must stay silent, or sparing what it must fire on — with the clause that decides it. Every one was a graded failure over one document, the kanon README, before it was a clause. Consult the row you doubt; the rest of the file is not needed.
+Each entry is a shape a row is mis-drawn to — firing where it must stay silent, or sparing what it must fire on — with the clause that decides it. Every one was a graded failure over one document, the kanon README, before it was a clause. Consult the row you doubt; that entry is enough.
 
 ## Contents
 
@@ -23,4 +23,4 @@ Three rewrite loops spared four sentences because each wore the doc's own apodic
 
 ## M1 — a true fact under a stronger register {#m1}
 
-An expansion pass upgraded measured facts to required ones — four falsehoods from register alone, no underlying fact touched. The row is drawn to sparing these because each base fact is true; the clause runs the other way: the artifact decides, and the truth of the underlying fact spares nothing. "Takes about 30 s" beside a recorded measurement is **silent**; "must complete in 30 s" with nothing that refuses fires, and the fix is the register — downgrade to what the artifact supports, not deletion of a true fact.
+An expansion pass upgraded measured facts to required ones — four falsehoods from register alone, no underlying fact touched. The row is drawn to sparing these because each base fact is true; the clause runs the other way: the artifact decides, and the truth of the underlying fact spares nothing. "Takes about 30 s" beside a recorded measurement is **silent**; "must complete in 30 s" with nothing that refuses fires, and the fix is the register — downgrade to what the artifact supports, not delete a true fact.

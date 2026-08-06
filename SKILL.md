@@ -7,13 +7,13 @@ description: Use when writing, rewriting or reviewing a README, spec, runbook, C
 
 A doc has no compiler, so each audit derives the artifacts a check can contradict: an audience sentence (A0) and a job list (J0). Both live in the audit report and nowhere else — a doc never carries its own audience or job metadata, and a rewrite that writes them into the doc has added sentences no job hires; they enter a doc only where the owner explicitly asked. The mechanical rows run without them; each judge row without its upstream artifact returns unverified, not passed.
 
-Checks split by executor. Mechanical, against the doc and the tree at HEAD: S3, M1, X1, X2's existence half, O1's order half. A judge agent decides the rest — A0, J0, S1, S2, S4, O1's decide half, O2, X2's behavior half — and its context is part of each check: J0 is derived from the system and the A0 sentence with the doc withheld, because a reader given only the doc certifies the doc's omissions; every other judge row then reads the doc against those declarations and the system, carrying nothing of the writing session, because a judge given the writer's vantage inherits it. The judge reports findings, not citations.
+Checks split by executor. Mechanical, against the doc and the tree at HEAD: S3, M1, X1, X2's existence half, O1's order half. A judge agent decides the rest — A0, J0, S1, S2, S4, O1's decide half, O2, X2's behavior half — and its context is part of each check: the judge derives J0 from the system and the A0 sentence with the doc withheld, because a reader given only the doc certifies the doc's omissions; every other judge row then reads the doc against those declarations and the system, carrying nothing of the writing session, because a judge given the writer's vantage inherits it. The judge reports findings, not citations.
 
 Sentence-level style is `references/style.md` — Williams distilled to checks (W1–W8), run after S1 hires the sentence; the rows here judge what a sentence is for, not how it reads.
 
 ## Rework
 
-Asked to write, rewrite or distill, the unit of work is the rework, not the patch: derive what the doc is for before reading how the incumbent wrote it. In order: read the system's surfaces; derive A0 and J0; state the point — the one claim the reader must retain. Where the system supports several irreconcilable points — different docs, not different phrasings — the owner chooses, and that is the only question asked. Then write fresh: the incumbent is evidence for facts and nothing else — its structure, order and register carry no authority, and a sentence is never spared for wearing the house voice, because the register asserts nothing (calibration, S1). Order comes from the funnel (O1); the sentence is written under `references/style.md`.
+Asked to write, rewrite or distill, take the rework, not the patch, as the unit of work: derive what the doc is for before reading how the incumbent wrote it. In order: read the system's surfaces; derive A0 and J0; state the point — the one claim the reader must retain. Where the system supports several irreconcilable points — different docs, not different phrasings — the owner chooses, and that is the only question to ask. Then write fresh: the incumbent is evidence for facts and nothing else — its structure, order and register carry no authority, and a sentence is never spared for wearing the house voice, because the register asserts nothing (calibration, S1). Order comes from the funnel (O1); the sentence is written under `references/style.md`.
 
 ## Audit
 
@@ -28,19 +28,19 @@ Asked to write, rewrite or distill, the unit of work is the rework, not the patc
 
 **Contract.** One doc, one audience, declared as situation plus knowledge floor — a moment, not a demographic (Pinker, curse of knowledge).
 
-**Check.** A sentence the owner supplies — "a reader who ⟨situation⟩, who already knows ⟨floor⟩" — is checked against the doc's content and the system; with none supplied, the judge infers one from both, and its inferability is the check. Unwritable is an observation, not taste: two situations demanding different first screens, or no floor one reader holds, is two docs welded — split before judging any sentence, because every judge row decides against exactly one audience. With no sentence writable, every judge row below is unverified, not passed — the repository-level finding, once; the mechanical rows run regardless.
+**Check.** The owner supplies the sentence — "a reader who ⟨situation⟩, who already knows ⟨floor⟩" — and the judge checks it against the doc's content and the system; with none supplied, the judge infers one from both, and its inferability is the check. Unwritable is an observation, not taste: two situations demanding different first screens, or no floor one reader holds, is two docs welded — split before judging any sentence, because every judge row decides against exactly one audience. With no sentence writable, every judge row below is unverified, not passed — the repository-level finding, once; the mechanical rows run regardless.
 
 ### J0 · Interface
 
-**Contract.** The job list — what the reader hires the doc for (Christensen; Ulwick, jobs to be done) — derives from audience × system surfaces, never from the doc; one doc serves one job class (Diátaxis).
+**Contract.** The job list is what the reader hires the doc for (Christensen; Ulwick, jobs to be done); it derives from audience × system surfaces, never from the doc; one doc serves one job class (Diátaxis).
 
-**Check.** The judge, given the system and the A0 sentence with the doc withheld, lists the jobs: each entry point an invoke-job, each reachable failure a diagnose-job, each lifecycle moment an install, first-run, upgrade or removal job. A list read off the doc's headings is void. A derived list spanning two job classes fires, routed to A0's split; a one-class list clears and is the artifact the rows below take. Without A0 the list is underivable and the row is unverified — A0's finding, not a new one.
+**Check.** The judge lists the jobs from the system and the A0 sentence, the doc withheld: each entry point an invoke-job, each reachable failure a diagnose-job, each lifecycle moment an install, first-run, upgrade or removal job. A list read off the doc's headings is void. A derived list spanning two job classes fires, routed to A0's split; a one-class list clears and is the artifact the rows below take. Without A0 the list is underivable and the row is unverified — A0's finding, not a new one.
 
 ### S1 · Sentence
 
 **Contract.** Every sentence is hired by a job.
 
-**Check.** The judge, holding the J0 list, the doc and the system, names the job each sentence answers: none names a cut. This one test kills all four leaks — session residue, self-defending rationale, implementation dump, fixture specifics — and truisms with them; a fact that would not survive deletion of the test suite is fixture, not behavior. The one sentence O2 requires is exempt. Without a J0 list the row is unverified — J0's finding, once, not one per sentence.
+**Check.** The judge holds the J0 list, the doc and the system, and names the job each sentence answers: none names a cut. This one test kills all four leaks — session residue, self-defending rationale, implementation dump, fixture specifics — and truisms with them; a fact that would not survive deletion of the test suite is fixture, not behavior. The one sentence O2 requires is exempt. Without a J0 list the row is unverified — J0's finding, once, not one per sentence.
 
 ### S2 · Sentence
 
@@ -70,7 +70,7 @@ Asked to write, rewrite or distill, the unit of work is the rework, not the patc
 
 **Contract.** A funnel stage hired by another reader class — change-it, hired by the maintainer — is exactly one sentence plus a pointer to that class's doc.
 
-**Check.** The judge names each stage's hiring class against A0. A stage another class hires that is absent is an omission — the fork is unfindable from here. One that runs past a sentence and a pointer has inlined the other class's funnel — contamination. The row clears only at exactly the handoff shape; a stage with no nameable class is S1's cut, not this row's. Without an A0 sentence the row is unverified — A0's finding.
+**Check.** The judge names each stage's hiring class against A0. A missing stage another class hires is an omission — the fork is unfindable from here. One that runs past a sentence and a pointer has inlined the other class's funnel — contamination. The row clears only at exactly the handoff shape; a stage with no nameable class is S1's cut, not this row's. Without an A0 sentence the row is unverified — A0's finding.
 
 ### M1 · Claim
 
@@ -82,7 +82,7 @@ Asked to write, rewrite or distill, the unit of work is the rework, not the patc
 
 **Contract.** Examples execute, commands run, links resolve — at HEAD.
 
-**Check.** Run every example and command as written, supplying only inputs the doc's own earlier funnel stages say the reader has; fetch every link. Fire where observed output diverges from what the doc shows — a breaks-stage example whose documented output is the error clears when that error reproduces. One the checking environment cannot run is unverified, not passed, and reported so; presented as executed but never run is L1, unconditional.
+**Check.** Run every example and command as written, supplying only inputs the doc's own earlier funnel stages say the reader has; fetch every link. Fire where observed output diverges from what the doc shows — a breaks-stage example whose documented output is the error clears when that error reproduces. One the checking environment cannot run is unverified, not passed, and reported so; one presented as executed but never run is L1, unconditional.
 
 ### X2 · Evidence
 

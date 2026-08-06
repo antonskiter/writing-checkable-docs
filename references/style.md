@@ -1,6 +1,6 @@
 # Sentence rows
 
-How a sentence reads, distilled to checks from Williams (*Style: Lessons in Clarity and Grace*), with the stance from classic style (Thomas & Turner; Pinker): prose is a window — the writer has seen something and positions the reader to see it, not to watch the writer thinking. A sentence enters these rows only after S1 hires it; clarity spent on an unhired sentence is waste. Every W row is doc-side — no tree, no execution — and runs at every audit level.
+These rows distill how a sentence reads to checks from Williams (*Style: Lessons in Clarity and Grace*), with the stance from classic style (Thomas & Turner; Pinker): prose is a window — the writer has seen something and positions the reader to see it, not to watch the writer thinking. A sentence enters these rows only after S1 hires it; clarity spent on an unhired sentence is waste. Every W row is doc-side — no tree, no execution — and runs at every audit level.
 
 ### W1 · Character
 
@@ -52,4 +52,4 @@ How a sentence reads, distilled to checks from Williams (*Style: Lessons in Clar
 
 ## Sources
 
-Williams owns W1–W6 (*Style*, the clarity, cohesion and concision lessons); Pinker (*The Sense of Style*) grounds the stance and the curse of knowledge; the Google Developer Documentation and Microsoft Writing style guides own the register W7–W8 operationalize. Consulted for mechanisms; the checks above are the working surface.
+Williams owns W1–W6 (*Style*, the clarity, cohesion and concision lessons); Pinker (*The Sense of Style*) grounds the stance and the curse of knowledge; the Google Developer Documentation and Microsoft Writing style guides own the register W7–W8 operationalize. The sources supply the mechanisms; the checks above are the working surface.
