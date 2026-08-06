@@ -91,3 +91,11 @@ Fail the doc on:
 ## When a verdict is unclear
 
 `references/calibration.md` records, per row, the shape it is drawn to and must not fire on, with the clause that spares it. Read the entry for the row in doubt; each one was a graded failure before it was a clause. A resemblance to a recorded shape never stands in for running the check.
+
+## Keywords
+
+Reach for: Diátaxis genre separation · every page is page one · curse of knowledge · jobs-to-be-done — the reader hires the doc · task orientation · knowledge floor · funnel of correct decisions · disqualifier up front · first correct result · handoff at the class seam · one home for a fact · point, don't restate · modality matches artifact · findability over order below the fold · fixture-deletion test · judge without the doc
+
+Live by: the reader arrives mid-task · a fact you cannot find in time is a fact you do not have · a doc-only reading certifies its own omissions · a reader who correctly leaves is a success · boring reference is healthy reference · tests are written for maintainers, not readers · pruning without jobs optimizes words · the writer's context is not the reader's fact · unverified is not passed
+
+Refuse — NEVER, not even once, not even "temporarily": marketing register ("blazingly", "simply", "just") · anticipatory self-defense · manufactured contrast · restating a source-owned default · fixture names in user docs · closure claims over open sets · narrating the session or the history · "please note" and throat-clearing · expected behavior stated as a feature · examples never executed · a word budget as the pruning criterion · a preservation checklist as a hire
