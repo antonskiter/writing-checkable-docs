@@ -5,24 +5,26 @@ description: Use when writing, rewriting or reviewing a README, spec, runbook, C
 
 # Doc Contracts
 
-A doc has no compiler, so each audit derives the artifacts a check can contradict: an audience sentence (A0) and a job list (J0). Both live only in the audit report; they enter a doc only where the owner asked. The mechanical rows run without them; any other row missing its upstream artifact returns unverified, not passed — the finding is the missing artifact's, filed once, not per row.
+A doc has no compiler, so each audit derives the artifacts a check can contradict: an audience sentence (A0) and a job list (J0). Both live only in the audit report; they enter a doc only where the owner asked. The mechanical rows run without them; any other row missing its upstream artifact returns unverified, not passed — the finding is the missing artifact's, filed once, not per row. The unit is the standing doc alone; prose that dies with its session — a reply, a commit message, a plan — is not this skill's work.
 
-Checks split by executor. Mechanical, against the doc and the tree at HEAD: S3, M1, X1, S2's clean-machine run, X2's existence half, O1's order half. A judge agent decides A0, J0, S1, the rest of S2, S4, the rest of O1, O2, X2's behavior half. Its context is part of each check: the judge derives J0 with the doc withheld, because a reader given only the doc certifies the doc's omissions; every other judge row reads the doc against those artifacts and the system, carrying nothing of the writing session, because a judge given the writer's vantage judges from that vantage. The judge reports findings, not citations. The cold-read agent runs R1 under the isolation R1's check states, because a reader holding the writer's context cannot stumble where the writer's reader will.
+Checks split by executor. Mechanical, run by the invoking agent against the doc and the tree at HEAD: S3, M1, X1, S2's clean-machine run, X2's existence half, O1's order half. A judge agent decides A0, J0, S1, the rest of S2, S4, the rest of O1, O2, X2's behavior half. Its context is part of each check: J0's derivation is its own agent, doc withheld — A0's judge has read the doc and cannot run it — because a reader given only the doc certifies the doc's omissions; every other judge row reads the doc against those artifacts and the system, carrying nothing of the writing session, because a judge given the writer's vantage judges from that vantage. The judge reports findings, not citations. The cold-read agent runs R1 under the isolation R1's check states, because a reader holding the writer's context cannot stumble where the writer's reader will. A verdict from a breached context — an executor that saw what its row withholds — is void: respawn it fresh, never patch its answer.
 
-Sentence-level style is `references/style.md` — Williams distilled to checks (W1–W8); the rows here judge what a sentence is for, not how it reads.
+Sentence-level style is `references/style.md` — doc-side rows that run at every audit level; the rows here judge what a sentence is for, not how it reads.
 
 ## Rework
 
-Asked to write, rewrite or distill, take the rework, not the patch, as the unit of work: derive what the doc is for before reading how the incumbent wrote it. In order: read the system's surfaces; derive A0 and J0; state the point — the one claim the reader must retain. Where the system supports several irreconcilable points — different docs, not different phrasings — the owner chooses; that is the only question to ask. Then write fresh: the incumbent is evidence for facts and nothing else — a sentence is never spared for wearing the house register, because the register asserts nothing (calibration, S1). Order comes from the funnel (O1); the sentence is written under `references/style.md`; R1's cold read runs after the fresh write, before the report — one round, unless the audit is `complete`.
+Asked to write, rewrite or distill, take the rework, not the patch, as the unit of work: derive what the doc is for before reading how the incumbent wrote it. In order: read the system's surfaces; derive A0 and J0 under the executor split above; state the point — the one claim the reader must retain. Where the system supports several irreconcilable points — different docs, not different phrasings — the owner chooses; that is the only question to ask. Then write fresh: the incumbent is evidence for facts and nothing else — a sentence is never spared for wearing the house register, because the register asserts nothing (calibration, S1). Order comes from the funnel (O1); the sentence is written under `references/style.md`; R1's cold read runs after the fresh write, before the report.
+
+An end-of-session doc update is this rework in miniature: derive what the session changed against A0 and J0 before writing the record, not after.
 
 ## Audit
 
-`--audit: complete | deep | light | none` scopes verification of the doc's claims; at every level, A0, J0 and the point derive from the system's surfaces. The default is `light`. The report names the level that ran; a check the level excludes is unverified, not passed.
+`--audit: complete | deep | light | none` scopes how far the doc's claims are verified; at every level, A0, J0 and the point derive from the system's surfaces, and the judge rows and W rows run — the bullets list only claim verification. The default is `light`. R1 follows mode and level: an audit leaves it unverified below `complete` and runs one cold read at `complete`; a rework runs one round below `complete` and the full loop at it. The report names the level that ran, carries A0, J0 and the point, and ranks the findings, each naming its row; a check the level excludes is unverified, not passed.
 
-- `complete` — every check as written: X1 executes and fetches, S2's first-correct-result runs on a clean machine, M1 and X2 hunt every artifact at HEAD, R1 runs to convergence or its three-round cap.
-- `deep` — the tree is read, nothing executed: S3's source search, M1's artifact naming, X2 entire with behavior decided by reading; X1, the clean-machine run and R1 are unverified.
+- `complete` — every check as written: X1 executes and fetches, S2's first-correct-result runs on a clean machine, M1 and X2 hunt every artifact at HEAD.
+- `deep` — `light` plus the tree, nothing else executed: S3's source search, M1's artifact naming, X2 entire with behavior decided by reading; X1 and the clean-machine run are unverified.
 - `light` — scans only: X2's existence half, L4's links, the doc-side L rows (L3, L7); behavior and artifacts unverified.
-- `none` — no verification: every fact is carried from the incumbent, and the report says so.
+- `none` — no claim verification: every fact rides on its source's word — the incumbent's or the session's — and the report says so.
 
 ### A0 · Declaration
 
@@ -40,7 +42,7 @@ Asked to write, rewrite or distill, take the rework, not the patch, as the unit 
 
 **Contract.** Every sentence is hired by a job.
 
-**Check.** The judge holds the J0 list, the doc and the system, and names the job each sentence answers: a sentence with none is cut. This one test kills all four leaks — session residue, self-defending rationale, implementation dump, fixture specifics — and truisms with them; a fact that would not survive deletion of the test suite is fixture, not behavior. Each sentence O2 requires is exempt.
+**Check.** The judge holds the J0 list, the doc and the system, and names the job each sentence answers: a sentence with none is cut; a fact that would not survive deletion of the test suite is fixture, not behavior. Each sentence O2 requires is exempt.
 
 ### S2 · Sentence
 
@@ -94,7 +96,7 @@ Asked to write, rewrite or distill, take the rework, not the patch, as the unit 
 
 **Contract.** First-pass comprehension is measured by a reader, never asserted by the writer — after a fresh write the writer cannot see their own curse of knowledge (Pinker).
 
-**Check.** The cold-read agent reads only the doc — fresh, no session context, the tree forbidden, the tool genre known but not the system — and reports findings, no rewrites, no praise: every stumble, quoted, with one line naming the difficulty — ambiguous referent, two-way parse, metonymy, opaque term; a playback of the doc in the agent's own words, gaps marked where it would be guessing; the three worst sentences, ranked, each with what first-pass comprehension needs. Triage is the writer's, against A0: a stumble the declared audience would share is a defect; a pause on the system's own term at or below the floor is not, and the term stays (W7); a playback misreading outranks any stumble; a playback gap at a deliberate pointer is a pass. Fix, then repeat with a fresh cold-read agent. Three rounds bound the loop: convergence — a round whose three worst land on already-triaged residue — exits earlier; residue standing at the cap enters the report, not another round.
+**Check.** The cold-read agent reads only the doc — fresh, no session context, the tree forbidden, the tool genre known but not the system — and reports findings, no rewrites, no praise: every stumble, quoted, with one line naming the difficulty — ambiguous referent, two-way parse, metonymy, opaque term; a playback of the doc in the agent's own words, gaps marked where it would be guessing; the three worst sentences, ranked, each with what first-pass comprehension needs. Triage is the writer's, against A0: a stumble the declared audience would share is a defect; a pause on the system's own term at or below the floor is not, and the term stays (W7); a playback misreading outranks any stumble; a playback gap at a deliberate pointer is a pass. In a rework, fix, then repeat with a fresh cold-read agent, within the rounds mode and level grant (Audit); an audit files the stumbles as findings and stops. Three rounds bound the loop: convergence — a round whose three worst land on already-triaged residue — exits earlier; residue standing at the cap enters the report, not another round.
 
 ## Mechanical
 
@@ -110,12 +112,12 @@ Fail the doc on:
 
 ## When a verdict is unclear
 
-`references/calibration.md` records, per row, the shape it is mis-drawn to — firing or sparing wrongly — with the clause that decides it. Read the entry for the row in doubt; each entry was a graded failure before it was a clause. A resemblance to a recorded shape never stands in for running the check.
+`references/calibration.md` records the shapes rows have been mis-drawn to — firing or sparing wrongly — each with the clause that decides it. Read the row's entry where one exists; a row without one is decided by running its check as written. A resemblance to a recorded shape never stands in for running the check.
 
-## Keywords
+## Changing the skill
 
-Reach for: Diátaxis genre separation · every page is page one · curse of knowledge · jobs-to-be-done — the reader hires the doc · task orientation · knowledge floor · funnel of correct decisions · disqualifier up front · first correct result · handoff at the class seam · one home for a fact · point, don't restate · modality matches artifact · findability over order below the fold · fixture-deletion test
+Row wording, level scope and the failure history are the maintainer's; the design and its decisions live in `docs/DESIGN.md`.
 
-Live by: the reader arrives mid-task · a fact you cannot find in time is a fact you do not have · boring reference is healthy reference · tests are written for maintainers, not readers · pruning without jobs optimizes words · the writer's context is not the reader's fact
+## Refuse
 
-Refuse — NEVER, not even once, not even "temporarily": marketing register ("blazingly", "simply", "just") · anticipatory self-defense · manufactured contrast · restating a source-owned default · fixture names in user docs · closure claims over open sets · narrating the session or the history · "please note" and throat-clearing · expected behavior stated as a feature · examples never executed · a word budget as the pruning criterion · a preservation checklist as a hire · audience or job metadata written into the doc unasked · the incumbent's structure as a template · a sentence spared for its register · a newline inside a paragraph — hard wrap imitating the renderer
+NEVER, not even once, not even "temporarily": marketing register ("blazingly", "simply", "just") · anticipatory self-defense · manufactured contrast · restating a source-owned default · fixture names in user docs · closure claims over open sets · narrating the session or the history · "please note" and throat-clearing · expected behavior stated as a feature · examples never executed · a word budget as the pruning criterion · a preservation checklist as a hire · audience or job metadata written into the doc unasked · the incumbent's structure as a template · a sentence spared for its register · a newline inside a paragraph — hard wrap imitating the renderer
